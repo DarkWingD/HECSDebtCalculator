@@ -1,0 +1,29 @@
+﻿@model HECSDebtCalculator.Models.HecsPredictionModel
+
+@{
+    ViewBag.Title = "UsersHecsPrediction";
+}
+
+<h2>UsersHecsPrediction</h2>
+
+<fieldset>
+    <legend>HecsPredictionModel</legend>
+
+    @foreach (var value in Model.SomeValues)
+    {
+        @Html.Raw(value)
+    }
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.TextBox("name")
+
+        <input type="submit" value="go!" />
+    }
+
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

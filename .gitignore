@@ -1,1 +1,6 @@
 # git ignore file
+.exe
+ehthumbs.db
+Thumbs.db
+/HECSDebtCalculator/bin/
+/HECSDebtCalculator/obj/
